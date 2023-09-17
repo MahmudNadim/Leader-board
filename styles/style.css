@@ -202,3 +202,43 @@ hr {
     width: 20px;
     height: 20px;
 }
+
+/* -------------
+Media queries
+--------------- */
+
+/* Smartphone devices */
+@media only screen and (max-width: 767px){
+    header{
+        height: auto;
+    }
+    .header-container{
+        flex-direction: column;
+    }
+    .logo-info{
+        left: 25px;
+    }
+    .container{
+        width: 100%;
+        padding: 0px;
+    }
+    .section-title{
+        text-align: center;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    hr{
+        width: 100%;
+    }
+    .blogs{
+        justify-items: center;
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    .courses{
+        flex-direction: column;
+        align-items: center;
+    }
+}
